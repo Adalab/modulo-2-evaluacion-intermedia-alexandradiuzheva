@@ -10,7 +10,11 @@ const attempt = document.querySelector('.js-attempt');
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
   }
+console.log(getRandomNumber(100));
 
-
+function handleClick(ev) {
+  ev.preventDefault();
+  console.log (number.value);
+}
 
 btn.addEventListener('click', handleClick);
