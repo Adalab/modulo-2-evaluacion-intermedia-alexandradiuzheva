@@ -5,19 +5,22 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./images/logo-adalab.svg" />
   <link rel="stylesheet" href="./css/main.css" />
   <title>EI-modulo2</title>
 </head>
 
-<body>
-  <main class="main js-main">
-    <h1>Adivina el número</h1>    
+<body class="body">
+  <header class="header">
+    <h1>Adivina el número</h1>
+  </header>
+  <main class="main">
     <form action="">
-      <label for="guess_number">Introduce aquí tu número:</label><br />
-      <input type="number" name="" min="1" max="100" class="js-number"><br />
-      <button class="js-btn">Prueba</button><br />
-      <input type="text" name="" placeholder="Pista: Escribe el número y dale a Prueba" class="js-advice"><br />
-      <input type="text" name="" placeholder="Número de intentos: 0" class="js-attempt"><br />
+      <label for="userNumber" class="style-label">Introduce aquí tu número:</label><br />
+      <input type="text" name="userNumber" id="userNumber" min="1" max="100" class="js-userNumber style-userNumber"><br />
+      <input type="button" value="Prueba" class="js-btn style-btn"><br />
+      <input type="text" name="" placeholder="Pista: Escribe el número y dale a Prueba" class="js-tips style-tips"><br />
+      <input type="text" name="" placeholder="Número de intentos: 0" class="js-attempt style-attempt"><br />
     </form>
   </main>
   <script src="./js/main.js"></script>
